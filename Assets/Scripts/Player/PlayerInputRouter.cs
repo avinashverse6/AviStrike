@@ -11,6 +11,8 @@ namespace CageDuel.Player
     /// Unified input router combining desktop Keyboard/Mouse controls (for Editor testing)
     /// and mobile Virtual Joystick + Touch Look + Action Buttons (for Android/iOS and Editor UI testing).
     /// </summary>
+    // Sample input before the motor and weapon consume this frame's actions.
+    [DefaultExecutionOrder(-50)]
     [DisallowMultipleComponent]
     public class PlayerInputRouter : MonoBehaviour
     {
